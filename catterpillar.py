@@ -11,7 +11,7 @@ caterpillar.penup()
 caterpillar.hideturtle()
 
 leaf = t.Turtle()
-leaf_shape = (0, 0), (14, 2), (18, 6), (20, 20), (6, 18), (2, 14)
+leaf_shape = ((0, 0), (14, 2), (18, 6), (20, 20), (6, 18), (2, 14))
 t.register_shape('leaf', leaf_shape)
 leaf.shape('leaf')
 leaf.color('green')
@@ -57,6 +57,15 @@ def place_leaf():
     leaf.setx(rd.randint(-200,200))
     leaf.sety(rd.randint(-200,200))
     leaf.showturtle()
+
+def outside_window():
+    pass
+def game_over():
+    pass
+def display_score(current_score):
+    pass
+def place_leaf():
+    pass
 
 def start_game():
     global game_started
